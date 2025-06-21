@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kemuel Rabi - Marketing Automation Specialist" />
+  <title>Kemuel Rabi | Marketing Automation Specialist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --accent-yellow: #ffd700;
+      --text-white: #ffffff;
+      --text-muted: #cbd5e1;
+      --border-light: rgba(148, 163, 184, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-white);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    nav {
+      background: var(--bg-dark);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--accent-yellow);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-white);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-yellow);
+    }
+
+    .hero {
+      padding: 100px 0 60px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent-yellow);
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      color: var(--text-muted);
+    }
+
+    .cta-buttons .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      background: var(--accent-yellow);
+      color: var(--bg-dark);
+      transition: all 0.3s ease;
+    }
+
+    .cta-buttons .btn:hover {
+      background: #ffe066;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--accent-yellow);
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .about-content img {
+      width: 250px;
+      border-radius: 12px;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-text p,
+    .about-text ul {
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+
+    .skills-list li {
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+
+    .project-row {
+      display: flex;
+      gap: 1.5rem;
+      overflow-x: auto;
+    }
+
+    .project-card {
+      background: #0f172a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-light);
+      min-width: 300px;
+    }
+
+    .project-card h3 {
+      color: var(--accent-yellow);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 180px;
+      background: #1e293b;
+      border-radius: 8px;
+      margin: 1rem 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .tool-item {
+      background: #0f172a;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+      font-weight: 500;
+    }
+
+    .contact-content {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-info {
+      margin-top: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    .social-links {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-links a {
+      background: var(--accent-yellow);
+      color: var(--bg-dark);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .social-links a:hover {
+      background: #ffe066;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">Kemuel Rabi</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Ditch the Doubt.<br />Master Marketing with Precision.</h1>
+      <p>Helping businesses streamline funnels, convert more leads, and scale with smart marketing systems.</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <img src="Kemuel%20Rabi.jpg" alt="Kemuel Rabi" />
+        <div class="about-text">
+          <p>I'm Kemuel Rabi—a data-informed marketing strategist focused on building efficient, results-driven systems through automation and funnel optimization.</p>
+          <p>I work with entrepreneurs, coaches, and small business teams to streamline lead capture, scale client acquisition, and set up high-performing campaigns using platforms like GoHighLevel, HubSpot, and Zapier.</p>
+          <p><strong>My specialties include:</strong></p>
+          <ul class="skills-list">
+            <li>Funnel design for webinars, landing pages, and services</li>
+            <li>Website design and editing (Wix, Elementor, Webflow)</li>
+            <li>Conditional lead nurturing flows</li>
+            <li>CRM integration and segmentation</li>
+            <li>Paid ad performance tracking (Meta, Google, LinkedIn)</li>
+            <li>Cross-platform content strategies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-row">
+        <div class="project-card">
+          <h3>Webinar Funnel for Estate Planning Firm</h3>
+          <div class="project-image" style="background-image: url('images/webinar-funnel.jpg');"></div>
+          <p>+40% attendance rate, +27% more qualified leads</p>
+        </div>
+        <div class="project-card">
+          <h3>Brand Awareness Campaign</h3>
+          <div class="project-image" style="background-image: url('images/brand-awareness.jpg');"></div>
+          <p>15–30% increase in page engagement using Facebook Ads + ManyChat</p>
+        </div>
+        <div class="project-card">
+          <h3>Marketing Automation Workflow</h3>
+          <div class="project-image" style="background-image: url('images/automation-workflow.jpg');"></div>
+          <p>Lead tier segmentation, follow-up automation, and CRM updates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <div class="container">
+      <h2 class="section-title">Tools & Platforms</h2>
+      <div class="tools-grid">
+        <div class="tool-item">GoHighLevel</div>
+        <div class="tool-item">Zapier</div>
+        <div class="tool-item">Google Ads</div>
+        <div class="tool-item">Facebook Ads</div>
+        <div class="tool-item">LinkedIn Ads</div>
+        <div class="tool-item">ManyChat</div>
+        <div class="tool-item">Figma</div>
+        <div class="tool-item">Webflow</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content">
+        <p>Let’s connect and scale your marketing operations together.</p>
+        <div class="contact-info">
+          <p>Email: kemuel.rabi@gmail.com</p>
+          <p>Location: Tacloban, Philippines</p>
+        </div>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/kemuelrabi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/iammrkrab30" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kemuel Rabi | Marketing Automation Specialist</p>
+    </div>
+  </footer>
+</body>
+</html>
