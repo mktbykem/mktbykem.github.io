@@ -169,7 +169,7 @@
 
     .nav-links a {
       text-decoration: none;
-      color: var(--text-secondary); font-weight: 500;
+      color: black; font-weight: 500;
       font-weight: 500;
       font-size: 0.95rem;
       position: relative;
@@ -179,7 +179,7 @@
     }
 
     .nav-links a:hover {
-      color: var(--deep-blue);
+      color: var(--golden-yellow);
       background: var(--powder-blue);
       transform: translateY(-2px);
     }
@@ -218,15 +218,12 @@
     }
 
     .hero h1 {
-      font-size: clamp(2.8rem, 6vw, 4rem);
-      font-weight: 800;
-      margin-bottom: 1.5rem;
-      background: var(--gradient-primary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      line-height: 1.1;
-      letter-spacing: -0.02em;
+     font-size: clamp(2.8rem, 6vw, 4rem);
+     font-weight: 800;
+     margin-bottom: 1.5rem;
+     color: var(--golden-yellow);
+    }
+
     }
 
     .hero-subtitle {
@@ -261,8 +258,9 @@
     }
 
     .btn-primary {
-      background: var(--gradient-primary);
-      color: white;
+      background: var(--golden-yellow);
+      color: #00001e;
+      border: none;
       box-shadow: var(--shadow-elevated);
     }
 
@@ -287,10 +285,10 @@
     }
 
     .btn-secondary {
-      background: #ffffff;
+      background: var(--golden-yellow);
       color: #00001e;
-      border: 2px solid var(--glass-border);
-      backdrop-filter: var(--blur-glass);
+      border: none;
+      box-shadow: var(--shadow-elevated);
     }
 
     .btn-secondary:hover {
@@ -308,10 +306,10 @@
     }
 
     .btn-secondary:hover {
-      background: var(--powder-blue);
-      border-color: var(--bright-blue);
+      background: #ffd000;
+      color: #00001e;
       transform: translateY(-3px);
-      box-shadow: var(--shadow-elevated);
+      box-shadow: var(--shadow-dramatic);
     }
 
     /* Enhanced Sections */
