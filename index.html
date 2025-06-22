@@ -9,23 +9,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
     :root {
-  --deep-navy: #00001e;
-  --royal-blue: #000077;
-  --bright-blue: #0000dd;
-  --golden-yellow: #ffcc00;
-  --warm-orange: #ffb100;
+      --deep-navy: #00001e;
+      --royal-blue: #000077;
+      --bright-blue: #0000dd;
+      --golden-yellow: #ffcc00;
+      --warm-orange: #ffb100;
 
-  --gradient-primary: linear-gradient(135deg, var(--deep-navy), var(--bright-blue));
-  --gradient-accent: linear-gradient(135deg, var(--bright-blue), var(--golden-yellow));
-  --gradient-surface: linear-gradient(135deg, var(--royal-blue), var(--bright-blue));
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --glass-bg: rgba(255, 255, 255, 0.85);
-  --glass-border: rgba(0, 0, 221, 0.2);
-  --blur-glass: blur(25px);
-  --shadow-elevated: 0 10px 40px rgba(0, 0, 221, 0.12);
-  --shadow-dramatic: 0 20px 60px rgba(0, 0, 221, 0.15);
-}
+      --gradient-primary: linear-gradient(135deg, var(--deep-navy), var(--bright-blue));
+      --gradient-accent: linear-gradient(135deg, var(--bright-blue), var(--golden-yellow));
+      --gradient-surface: linear-gradient(135deg, var(--royal-blue), var(--bright-blue));
+
+      --text-primary: #ffffff;          /* white for secondary text */
+      --text-secondary: #ffffff;        /* white for paragraph and light text */
+      --text-accent: #ffcc00;           /* golden yellow for headings and titles */
+
+      --glass-bg: rgba(255, 255, 255, 0.85);
+      --glass-border: rgba(0, 0, 221, 0.2);
+      --blur-glass: blur(25px);
+      --shadow-elevated: 0 10px 40px rgba(0, 0, 221, 0.12);
+      --shadow-dramatic: 0 20px 60px rgba(0, 0, 221, 0.15);
+    }
 
 
     * {
@@ -93,6 +96,30 @@
       margin: 0 auto;
       padding: 0 2rem;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+  color: var(--text-accent);
+    }
+
+    .section-title {
+  color: var(--text-accent);
+    }
+
+    .about-text p,
+    .project-description,
+    .contact-description,
+    .contact-item p,
+    .nav-links a,
+    .tool-item span,
+    footer {
+    color: var(--text-secondary);
+    }
+
+    strong {
+    color: var(--text-accent);
+    }
+
+
 
     /* Enhanced Navigation */
     nav {
